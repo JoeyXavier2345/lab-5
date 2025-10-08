@@ -29,7 +29,7 @@ public final class GetAverageGradeUseCase {
             Grade[] grades; 
             try {grades = gradeDataBase.getGrades(s); } catch (Exception e) {throw e;}
             for (Grade g : grades) {
-                if (g.getCourse() == course) {
+                if (g.getCourse().equals(course)) {
                     count++;
                     sum += (float) g.getGrade();
                 }
