@@ -40,3 +40,4 @@ build/
 
 ### Our API TOKEN! ###
 token.txt
+.envrc
